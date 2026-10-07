@@ -1,3 +1,4 @@
+#Учет студентов
 students = [
     "Нурлыхан",
     "Рақымжан",
@@ -12,7 +13,6 @@ def show_students():
         print(student)
 
 
-show_students()
 def search_student(name):
     for student in students:
         if student.lower() == name.lower():
@@ -21,11 +21,14 @@ def search_student(name):
 
     print("Студент не найден")
 
-    search_student("Нурлыхан")
 
-    def add_student(name):
+def add_student(name):
     students.append(name)
-    print(f"Студент добавлен: {name}");
+    print(f"Студент добавлен: {name}")
 
-add_student("Айдос");
-show_students();
+
+show_students()
+search_student("Нурлыхан")
+add_student("Айдос")
+show_students()
+
